@@ -33,3 +33,9 @@ resilience4j:
     instances:
       paymentService:
         timeout-duration: 4s
+        
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
