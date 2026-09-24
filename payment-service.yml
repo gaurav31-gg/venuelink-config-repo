@@ -10,3 +10,5 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.type.mapping: paymentCompletedEvent:com.venuelink.paymentservice.event.PaymentCompletedEvent,paymentFailedEvent:com.venuelink.paymentservice.event.PaymentFailedEvent
