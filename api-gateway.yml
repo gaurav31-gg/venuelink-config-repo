@@ -35,3 +35,9 @@ logging:
   level:
     org.springframework.cloud.gateway: DEBUG
     reactor.netty: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: gateway,health,info
