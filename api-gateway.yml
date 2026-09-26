@@ -30,3 +30,8 @@ spring:
           uri: lb://payment-service
           predicates:
             - Path=/api/payments/**
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty: DEBUG
