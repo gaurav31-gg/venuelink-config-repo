@@ -4,3 +4,6 @@ server:
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/customer_db?createDatabaseIfNotExist=true
+jwt:
+  secret: "ThisIsASecretKeyForVenueLinkJWTSigningChangeInProduction123456"
+  expiration-ms: 86400000
