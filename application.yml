@@ -21,3 +21,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
+jwt:
+  secret: "ThisIsASecretKeyForVenueLinkJWTSigningChangeInProduction123456"
+  expiration-ms: 86400000
+
